@@ -1,0 +1,17 @@
+/*Barra de navegação*/
+.bg-body-tertiary{
+  --bs-bg-opacity: 1;
+    background-color: rgba(0,0,0,var(--bs-bg-opacity))!important;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav{
+  color: white !important;
+}
+
+.navbar-nav .nav-link{
+  --bs-nav-link-color: --bs-white;
+}
+
+.nav-link:hover{
+  color: white !important;
+}
