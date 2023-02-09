@@ -8,7 +8,7 @@ window.onscroll = function() {
   };
 
 window.onresize = function(){
-    if (screen.width <= 800){
+    if (screen.width <= 1000){
     var pai = document.getElementById("nav-top");
     var filho = document.getElementById("nav-mensagem");
     if(filho != null){
