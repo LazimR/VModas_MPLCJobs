@@ -10,8 +10,43 @@ body{
   width: 100%;
 }
 
-@media (min-width: 992px){
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
 
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+
+@media (min-width: 992px){
+  
 
   /*Barra de navegação*/
   #navbar{
@@ -75,10 +110,6 @@ body{
     border-width: 0.12rem;
   }
 
-  .produtos{
-    width: 30%;
-    height: 20%;
-  }
 
   /*Rodapé*/
   .border-color{
@@ -90,11 +121,25 @@ body{
     margin-left: 10%;
     margin-right: 10%;
   }
-
-  #myCarousel{
-    text-align: center;
+  .carousel img{
+    max-height: 30vw;
   }
 
+  #carousel-de-produtos01 img{
+    max-height: 10vw;
+  }
+  .carousel-item{
+    max-height: 50vw;
+
+  }
+  .carousel{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 10px;
+  }
+  .card{
+    background-color: black;
+  }
 }
 
 @media (max-width: 500px){

@@ -1,3 +1,4 @@
+
 window.onscroll = function() {
     var navbar = document.getElementById("navbar");
     if (window.pageYOffset > 5) {
@@ -17,4 +18,4 @@ window.onresize = function(){
     
     }
 }
-  
+
