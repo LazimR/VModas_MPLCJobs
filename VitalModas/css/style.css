@@ -1,17 +1,197 @@
-/*Barra de navegação*/
-.bg-body-tertiary{
-  --bs-bg-opacity: 1;
-    background-color: rgba(0,0,0,var(--bs-bg-opacity))!important;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav{
-  color: white !important;
+body{
+  background-color: rgb(238, 133, 14);
+  min-height: 100vh;
+  width: 100%;
 }
 
-.navbar-nav .nav-link{
-  --bs-nav-link-color: --bs-white;
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
 }
 
-.nav-link:hover{
-  color: white !important;
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+
+@media (min-width: 992px){
+  
+
+  /*Barra de navegação*/
+  #navbar{
+    font-size: x-large;
+  }
+
+  #nav-top{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-basis: auto;
+
+  }
+  
+  #nav-mensagem a{
+    color: aqua;
+  }
+  
+  #nav-mensagem{
+    font-size: 16px; 
+    width:27%; 
+    padding-right: 0%;
+    color: rgb(255, 255, 255);
+    visibility: visible;
+  }
+  
+  .navbar-nav .nav-link.active, .navbar-nav{
+    color: white !important;
+  }
+  
+  .navbar-nav .nav-link{
+    --bs-nav-link-color: --bs-white;
+  }
+  
+  .nav-link:hover{
+    color: white !important;
+  }
+  
+  .navbar{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28333, 256, 256, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+  
+  .navbar-toggler-icon{
+    width: 3vw;
+    height: 5vh;
+  }
+  .dropdown-item{
+    font-size: 1.5vw;
+    color: white;
+  }
+  
+  .dropdown-menu{
+   --bs-dropdown-bg: #000000 !important; 
+   width: max-content;
+  }
+  
+  /*Navbar com pesquisa*/
+  .nav-item-border{
+    border-left-style: solid;
+    border-color: #fff;
+    border-width: 0.12rem;
+  }
+
+
+  /*Rodapé*/
+  .border-color{
+    border-color: rgb(238, 133, 14)!important;
+    border-width: 0.2rem !important;
+  }
+
+  #principal{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .carousel img{
+    max-height: 30vw;
+  }
+
+  #carousel-de-produtos01 img{
+    max-height: 10vw;
+  }
+  .carousel-item{
+    max-height: 50vw;
+
+  }
+  .carousel{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 10px;
+  }
+  .card{
+    background-color: black;
+  }
+}
+
+@media (max-width: 500px){
+  /*Barra de navegação*/
+  #nav-top{
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-basis: auto;
+  }
+  
+  #nav-mensagem a{
+    color: aqua;
+  }
+  
+  #nav-mensagem{
+    font-size: 16px; 
+    width:27%; 
+    padding-right: 0%;
+    color: rgb(255, 255, 255);
+    visibility: hidden;
+  }
+  
+  .navbar-nav .nav-link.active, .navbar-nav{
+    color: white !important;
+  }
+  
+  .navbar-nav .nav-link{
+    --bs-nav-link-color: --bs-white;
+  }
+  
+  .nav-link:hover{
+    color: white !important;
+  }
+  
+  .navbar{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28333, 256, 256, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  }
+  
+  .navbar-toggler-icon{
+    width: 3vw;
+    height: 5vh;
+  }
+  .dropdown-item{
+    font-size: 1.5vw;
+    color: white;
+  }
+  
+  .dropdown-menu{
+   --bs-dropdown-bg: #000000 !important; 
+   width: max-content;
+  }
+
+
 }
