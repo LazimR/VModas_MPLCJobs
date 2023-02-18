@@ -1,7 +1,6 @@
 
 
 $(document).ready(function() {
-    console.log("Salve")
     // Configurações do carrossel
     $('#multi-item-carousel').carousel({
       interval: false
@@ -11,7 +10,6 @@ $(document).ready(function() {
     $('#multi-item-carousel').on('slide.bs.carousel', function(e) {
   
       // Determina o número de itens no carrossel
-      console.log("Aoba")
       var $e = $(e.relatedTarget);
       var itemsPerSlide = 4;
       var totalItems = $('.carousel-item').length;
@@ -32,7 +30,6 @@ $(document).ready(function() {
   });
   
   $(document).ready(function() {
-    console.log("Salve")
     // Configurações do carrossel
     $('#carouselNovidades').carousel({
       interval: false
@@ -61,3 +58,12 @@ $(document).ready(function() {
       }
     });
   });
+
+  window.onscroll = function() {
+    var navbar = document.getElementById("navbar");
+    if (window.pageYOffset > 5) {
+      navbar.classList.add("fixed-top");
+    } else {
+      navbar.classList.remove("fixed-top");
+    }
+  }

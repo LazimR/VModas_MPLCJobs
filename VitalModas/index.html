@@ -16,37 +16,43 @@
 </head>
 <body>
   <script src="js/bootstrap.js"></script>
-  <nav class="navbar navbar-expand-lg bg-black" >
-    <div class="container-fluid">
-      <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-      <div id="nav-top">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown" id="menu-dropdown">
-            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="navbar-toggler-icon"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">LOJA</a></li>
-              <li><a class="dropdown-item" href="#">PRODUTOS</a></li>
-              <li><a class="dropdown-item" href="#">DOWNLOADS</a></li>
-              <li><a class="dropdown-item" href="#">FALE CONOSCO</a></li>
-              <li><a class="dropdown-item" href="#">TRABALHE CONOSCO</a></li>
-            </ul>
-          </li>        
-        </ul>
-        <a class="navbar-brand mx-auto" href="#" style=" padding-right: 0%;"><img src="imagens/logo.jpeg" alt="Vital Modas" style="width:20vw; height:4vw;">
-        </a>
-        <span class="navbar-brand" id="nav-mensagem">Seja bem-vindo! <a href="#cadastro">Cadastre-se</a> ou faça <a href="#login">Login <img src="imagens/login.png" alt="login" style="width: 10% "></a>
-        </span>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black" >
+      <div class="container-fluid">
+        <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+        <div id="nav-top">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown" id="menu-dropdown">
+              <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">LOJA</a></li>
+                <li><a class="dropdown-item" href="#">PRODUTOS</a></li>
+                <li><a class="dropdown-item" href="#">DOWNLOADS</a></li>
+                <li><a class="dropdown-item" href="#">FALE CONOSCO</a></li>
+                <li><a class="dropdown-item" href="#">TRABALHE CONOSCO</a></li>
+                <li><a class="dropdown-item" href="sobre.html">SOBRE NÓS</a></li>
+              </ul>
+            </li>        
+          </ul>
+          
+          <a class="navbar-brand mx-auto" href="index.html" style=" padding-right: 0%;"><img src="imagens/logo.jpeg" alt="Vital Modas" style="width:20vw; height:4vw;">
+          </a>
+          
+          <span class="navbar-brand .d-none .d-md-block .d-lg-none" id="nav-mensagem">Seja bem-vindo! <a href="#cadastro">Cadastre-se</a> ou faça <a href="#login">Login</a>
+          </span>
+          
+          <span class="navbar-brand ms-5 .d-none .d-sm-block .d-md-none" id="nav-login">
+            <img src="imagens/login.png" alt="login" style="max-width: 10% "></a>
+          </span>
+        </div>
+        
       </div>
-      
-    </div>
-  </nav>
-
-  <p><h4 style="text-align: center;">NOSSOS PRODUTOS</h4></p>
-    <!-- -->
+    </nav>  
+  </header>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-black">
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
@@ -74,24 +80,28 @@
         </svg></button>
       </form>
     </nav>
-  <!--
-   CAROUSEL GRANDE DE NOVIDADES
-  -->
+  
   <div id="principal">
+    <!-- CAROUSEL GRANDE DE NOVIDADES -->
     <div id="carouselNovidades" class="carousel slide carousel-fade">
+      <!--
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselNovidades" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselNovidades" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselNovidades" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselNovidades" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        
       </div>
+      -->
+      
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="imagens/icon_mastercard.jpg" class="d-block w-100" alt="...">
+          <img src="imagens/anuncio.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Primeiro Slide</h5>
             <p>Textinho de exemplo.</p>
           </div>
         </div>
+      <!--
         <div class="carousel-item">
           <img src="imagens/icon_mastercard.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
@@ -107,6 +117,9 @@
           </div>
         </div>
       </div>
+      -->
+    
+    <!--
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovidades" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -115,10 +128,14 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    -->
     </div>
+    
+    
     <!-- 
      PRIMEIRO CAROUSEL DE PRODRUTOS  
     !-->
+    <br>
     <div id="carousel-de-produtos01" class="carousel slide carousel-fade bg-black" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -196,65 +213,59 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    
-    
-
-
-    
-  </div> 
-
-
-<footer class="bg-black py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-4">
-        <div class="footer-content">
-          <p class="text-white border-color" style="font-size: xx-large; border-left-style: solid;">Institucional</p>
-          <ul>
-            <li>
-              <p>HOME</p>
-            </li>
-            <li>
-              <p>A LOJA</p>
-            </li>
-            <li>
-              <p>PRODUTOS</p>
-            </li>
-            <li>
-              <p>DOWNLOADS</p>
-            </li>
-            <li>
-              <p>TRABALHE CONOSCO</p>
-            </li>
-          </ul>
+    </div> 
+  </div>
+  <footer class="bg-black py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="footer-content">
+            <p class="text-white border-color" style="font-size: x-large; border-left-style: solid;">Institucional</p>
+            <ul>
+              <li>
+                <p>HOME</p>
+              </li>
+              <li>
+                <p>A LOJA</p>
+              </li>
+              <li>
+                <p>PRODUTOS</p>
+              </li>
+              <li>
+                <p>DOWNLOADS</p>
+              </li>
+              <li>
+                <p>TRABALHE CONOSCO</p>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-4">
-        <div class="footer-content">
-          <p class="text-white border-color" style="font-size: xx-large; border-left-style: solid;">Atendimento</p>
-          <ul>
-            <li>
-              <p>Atendimento de 08h até 18h</p>
-            </li>
-            <li>
-              <p>vitalmodas1331@gmail.com</p>
-            </li>
-            <li>
-              <p>(89)9 9425-1397</p>
-          </ul>
+        <div class="col-4">
+          <div class="footer-content">
+            <p class="text-white border-color" style="font-size: x-large; border-left-style: solid;">Atendimento</p>
+            <ul>
+              <li>
+                <p>Atendimento de 08h até 18h</p>
+              </li>
+              <li>
+                <p>vitalmodas1331@gmail.com</p>
+              </li>
+              <li>
+                <p>(89)9 9425-1397</p>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-4">
-        <div class="footer-content">
-          <p class="text-white border-color" style="font-size: xx-large; border-left-style: solid;"></p>
+        <div class="col-4">
+          <div class="footer-content">
+            <p class="text-white border-color" style="font-size: xx-large; border-left-style: solid;"></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="barra-horizontal bg-dark">
-    <p class="text-white">Vital Modas   </p>
-  </div>
-</footer>
-
+    <div class="barra-horizontal bg-dark">
+      <p class="text-white">Vital Modas   </p>
+    </div>
+  </footer>
+  
 </body>
 </html>

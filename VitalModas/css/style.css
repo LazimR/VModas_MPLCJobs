@@ -45,12 +45,9 @@ transform: translateX(0);
 }
 
 
-@media (min-width: 992px){
-  
-
   /*Barra de navegação*/
   #navbar{
-    font-size: x-large;
+    font-size: large;
   }
 
   #nav-top{
@@ -66,7 +63,7 @@ transform: translateX(0);
   }
   
   #nav-mensagem{
-    font-size: 16px; 
+    font-size: small; 
     width:27%; 
     padding-right: 0%;
     color: rgb(255, 255, 255);
@@ -117,22 +114,41 @@ transform: translateX(0);
     border-width: 0.6rem !important;
   }
 
+  footer{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: -40vw;
+    width: 100vw;
+  }
   .footer-content ul{
     list-style: none;
     color: white;
   }
 
   .footer-content li{
-    font-size: large;
+    font-size: small;
+  }
+
+  .barra-horizontal{
+    font-size: medium;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: -1vw;
+    width: 100vw;
   }
 
   .barra-horizontal p{
     margin: 0 ;
   }
+  
 
   #principal{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   /*Carousel*/
@@ -155,58 +171,3 @@ transform: translateX(0);
   .card{
     background-color: black;
   }
-}
-
-@media (max-width: 500px){
-  /*Barra de navegação*/
-  #nav-top{
-    width: 100vw;
-    height: max-content;
-    display: flex;
-    flex-basis: auto;
-  }
-  
-  #nav-mensagem a{
-    color: aqua;
-  }
-  
-  #nav-mensagem{
-    font-size: 16px; 
-    width:27%; 
-    padding-right: 0%;
-    color: rgb(255, 255, 255);
-    visibility: hidden;
-  }
-  
-  .navbar-nav .nav-link.active, .navbar-nav{
-    color: white !important;
-  }
-  
-  .navbar-nav .nav-link{
-    --bs-nav-link-color: --bs-white;
-  }
-  
-  .nav-link:hover{
-    color: white !important;
-  }
-  
-  .navbar{
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28333, 256, 256, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  }
-  
-  .navbar-toggler-icon{
-    width: 3vw;
-    height: 5vh;
-  }
-  .dropdown-item{
-    font-size: 1.5vw;
-    color: white;
-  }
-  
-  .dropdown-menu{
-   --bs-dropdown-bg: #000000 !important; 
-   width: max-content;
-  }
-
-
-}
