@@ -114,13 +114,28 @@ transform: translateX(0);
   /*Rodapé*/
   .border-color{
     border-color: rgb(238, 133, 14)!important;
-    border-width: 0.2rem !important;
+    border-width: 0.6rem !important;
+  }
+
+  .footer-content ul{
+    list-style: none;
+    color: white;
+  }
+
+  .footer-content li{
+    font-size: large;
+  }
+
+  .barra-horizontal p{
+    margin: 0 ;
   }
 
   #principal{
     margin-left: 10%;
     margin-right: 10%;
   }
+
+  /*Carousel*/
   .carousel img{
     max-height: 30vw;
   }
