@@ -10,6 +10,11 @@ body{
   width: 100%;
 }
 
+#principal{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
       display: none;
@@ -45,7 +50,7 @@ transform: translateX(0);
 }
 
 
-  /*Barra de navegação*/
+  /*Barra de navegação*/  
   #navbar{
     font-size: large;
   }
@@ -63,8 +68,8 @@ transform: translateX(0);
   }
   
   #nav-mensagem{
-    font-size: small; 
-    width:27%; 
+    font-size: medium; 
+    width:20vw; 
     padding-right: 0%;
     color: rgb(255, 255, 255);
     visibility: visible;
@@ -119,7 +124,7 @@ transform: translateX(0);
     right: 0;
     bottom: 0;
     position: absolute;
-    margin-bottom: -40vw;
+    margin-bottom: -70vh;
     width: 100vw;
   }
   .footer-content ul{
@@ -128,7 +133,7 @@ transform: translateX(0);
   }
 
   .footer-content li{
-    font-size: small;
+    font-size: medium;
   }
 
   .barra-horizontal{
@@ -146,19 +151,17 @@ transform: translateX(0);
   }
   
 
-  #principal{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
   /*Carousel*/
   .carousel img{
+    border-radius: 8px;
     max-height: 30vw;
   }
 
   #carousel-de-produtos01 img{
     max-height: 10vw;
   }
+
+
   .carousel-item{
     max-height: 50vw;
 
@@ -170,4 +173,5 @@ transform: translateX(0);
   }
   .card{
     background-color: black;
+    color: #fff;
   }

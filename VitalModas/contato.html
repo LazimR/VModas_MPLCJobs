@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
     
@@ -53,8 +54,35 @@
     </nav>  
   </header>
   
-  <div id="principal">
-   
+  <div id="principal" style="margin-top: 5%; font-size: large;">
+
+ 
+    <form  class="row g-3">
+        <div class="mb-3">
+            <label for="nome-input">Nome</label>
+            <input type="text" class="form-control" id="nome-input" placeholder="Nome">
+        </div>
+        <div class="mb-3">
+            <label for="email-input" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="assunto-input">Assunto</label>
+            <select class="form-select" id="assunto-input">
+                <option selected>Assunto</option>
+                <option value="1">Sugestão</option>
+                <option value="2">Reclamação</option>
+                <option value="3">Agradecimento</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="mensagem-input" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem-input" rows="4" placeholder="Escreva aqui a sua mensagem. &#128512"></textarea>
+        </div>
+        <div>
+            <button class="btn text-white bg-black" type="submit">Enviar Mensagem</button>
+        </div>
+    </form>
   </div>
 
   <footer class="bg-black py-5">
