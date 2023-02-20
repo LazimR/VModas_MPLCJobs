@@ -7,81 +7,67 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+
     <script src="js/carousel.js"></script>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Vital Modas</title>
 </head>
 <body>
-  <script src="js/bootstrap.js"></script>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-black" >
-      <div class="container-fluid">
-        <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-        <div id="nav-top">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown" id="menu-dropdown">
-              <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="index.html">LOJA</a></li>
-                <li><a class="dropdown-item" href="#">PRODUTOS</a></li>
-                <li><a class="dropdown-item" href="#">DOWNLOADS</a></li>
-                <li><a class="dropdown-item" href="contato.html">FALE CONOSCO</a></li>
-                <li><a class="dropdown-item" href="#">TRABALHE CONOSCO</a></li>
-                <li><a class="dropdown-item" href="sobre.html">SOBRE NÓS</a></li>
-              </ul>
-            </li>        
-          </ul>
-          
-          <a class="navbar-brand mx-auto" href="index.html" style=" padding-right: 0%;"><img src="imagens/logo.jpeg" alt="Vital Modas" style="width:20vw; height:4vw;">
-          </a>
-          
-          <span class="navbar-brand .d-none .d-md-block .d-lg-none" id="nav-mensagem">Seja bem-vindo! <a href="#cadastro">Cadastre-se</a> ou faça <a href="#login">Login</a>
-          </span>
-          
-          <span class="navbar-brand ms-5 .d-none .d-sm-block .d-md-none" id="nav-login">
-            <img src="imagens/login.png" alt="login" style="max-width: 10% "></a>
-          </span>
-        </div>
-        
-      </div>
-    </nav>  
-  </header>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-black">
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item nav-item-border">
-            <a class="nav-link" href="#">Camisas</a>
-          </li>
-          <li class="nav-item nav-item-border">
-            <a class="nav-link" href="#">Shorts</a>
-          </li>
-          <li class="nav-item nav-item-border">
-            <a class="nav-link" href="#">Calças</a>
-          </li>
-          <li class="nav-item nav-item-border">
-            <a class="nav-link" href="#">Cuecas</a>
-          </li>
-          <li class="nav-item nav-item-border">
-            <a class="nav-link" href="#">Tênis</a>
-          </li>
-        </ul>
-      </div>
-      <form class="form-inline my-2 my-lg-0" style="display: flex; margin-right: 1vw;">
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg></button>
-      </form>
-    </nav>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#000"
+      },
+      "button": {
+        "background": "#ee850e",
+        "text": "#ffffff"
+      }
+    },
+    "theme": "classic",
+    "position": "bottom-right",
+    "type": "opt-in",
+    "content": {
+      "message": "Nós usamos cookies para personalizar conteúdos e anúncios e para analisar o tráfego em nosso site. Você aceita os nossos cookies?",
+      "allow": "Aceitar",
+      "deny": "Recusar",
+      "link": "Mais sobre"
+    }
+  });
+  </script>
   
-  <div id="principal">
+  <script src="js/bootstrap.js"></script>
+  <header class="p-3 text-white bg-black sticky-top">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none" style="margin-left: -10%;">
+          <img src="imagens/logo.svg" alt="Vital Modas" width="200" height="50">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto ms-5 me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">Produtos</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Downloads</a></li>
+          <li><a href="contato.html" class="nav-link px-2 text-white">Fale Conosco</a></li>
+          <li><a href="sobre.html" class="nav-link px-2 text-white">Sobre Nós</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-white" placeholder="Busca" aria-label="Search">
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Cadastre-se</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div id="principal" class="container-">
     <!-- CAROUSEL GRANDE DE NOVIDADES -->
     <div id="carouselNovidades" class="carousel slide carousel-fade">
       <!--
@@ -131,142 +117,220 @@
       </button>
     -->
     </div>
-    
+  </div> 
     
     <!-- 
      PRIMEIRO CAROUSEL DE PRODRUTOS  
     !-->
     <br>
-    <div id="carousel-de-produtos01" class="carousel slide carousel-fade bg-black" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row mx-auto">
-            <div class="col-md-auto">
-              <div class="card">
-                <div class="card-body">
-                  <img  src="imagens/camisa_01.jpg" alt="camisa">
-                  <p class="card-text">20R$</p>
+    <div class="card">
+      <h5 class="card-title" style="text-align: center;">CAMISAS</h5>
+      <div id="carousel-de-produtos01" class="carousel carousel-fade bg-black " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row pe-sm-3 mx-sm-5 mx-md-2 linha-itens">
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_01.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_02.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_03.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_04.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-auto">
-              <div class="card">
-                <div class="card-body">
-                  <img  src="imagens/camisa_02.jpg" alt="camisa">
-                  <p class="card-text">20R$</p>
+            
+          </div>
+          <div class="carousel-item">
+            <div class="row pe-sm-3 mx-sm-5 mx-md-2 linha-itens">
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_05.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-auto">
-              <div class="card">
-                <div class="card-body">
-                  <img  src="imagens/camisa_03.jpg" alt="camisa">
-                  <p class="card-text">20R$</p>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_06.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-auto">
-              <div class="card">
-                <div class="card-body">
-                  <img  src="imagens/camisa_01.jpg" alt="camisa">
-                  <p class="card-text">20R$</p>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_07.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_08.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
-        <div class="carousel-item">
-          <div class="row mx-auto">
-            <div class="col-md-auto">
-              <div class="card">
-                <div class="card-body">
-                  <img  src="imagens/camisa_04.jpg" alt="camisa">
-                  <p class="card-text">20R$</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-auto">
-              <div class="card">
-                <div class="card-body">
-                  <img  src="imagens/camisa_05.jpg" alt="camisa">
-                  <p class="card-text">20R$</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-auto">
-              <div class="card">
-                <div class="card-body">
-                  <img  src="imagens/camisa_06.jpg" alt="camisa">
-                  <p class="card-text">20R$</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-de-produtos01" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-de-produtos01" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-de-produtos01" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel-de-produtos01" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    </div> 
+
+    <div class="card">
+      <h5 class="card-title" style="text-align: center;">SHORTS</h5>
+      <div id="carousel-de-produtos02" class="carousel carousel-fade bg-black " data-bs-ride="carousel">  
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row pe-sm-3 mx-sm-5 mx-md-2 linha-itens">
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_01.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_02.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_03.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_04.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            <div class="row pe-sm-3 mx-sm-5 mx-md-2 linha-itens">
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_05.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_06.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_07.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 mx-1">
+                <div class="card">
+                  <div class="card-body">
+                    <a href=""><img  src="imagens/camisa_08.jpg" alt="camisa"></a>
+                    <p style="position: absolute; top:90%; left: 50%;">20R$</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-de-produtos02" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-de-produtos02" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   </div>
-  <footer class="bg-black py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="footer-content">
-            <p class="text-white border-color" style="font-size: x-large; border-left-style: solid;">Institucional</p>
-            <ul>
-              <li>
-                <p>HOME</p>
-              </li>
-              <li>
-                <p>A LOJA</p>
-              </li>
-              <li>
-                <p>PRODUTOS</p>
-              </li>
-              <li>
-                <p>DOWNLOADS</p>
-              </li>
-              <li>
-                <p>TRABALHE CONOSCO</p>
-              </li>
-            </ul>
-          </div>
+ 
+  <div class="container-fluid bg-black text-white">
+    <footer class="py-2">
+      <div class="row justify-content-evenly">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Institucional</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Produtos</a></li>
+            <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-white">Fale Conosco</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Trabalhe Conosco</a></li>
+            <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-white">Sobre Nós</a></li>
+          </ul>
         </div>
-        <div class="col-4">
-          <div class="footer-content">
-            <p class="text-white border-color" style="font-size: x-large; border-left-style: solid;">Atendimento</p>
-            <ul>
-              <li>
-                <p>Atendimento de 08h até 18h</p>
-              </li>
-              <li>
-                <p>vitalmodas1331@gmail.com</p>
-              </li>
-              <li>
-                <p>(89)9 9425-1397</p>
-            </ul>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="footer-content">
-            <p class="text-white border-color" style="font-size: xx-large; border-left-style: solid;"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="barra-horizontal bg-dark">
-      <p class="text-white">Vital Modas   </p>
-    </div>
-  </footer>
   
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Atendimento</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Atendimento de 08h até 18h</a></li>
+            <li class="nav-item mb-2 fl"><a href="#" class="nav-link p-0 text-white">vitalmodas1331@gmail.com</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">(89)9 9425-1397</a></li>
+          </ul>
+        </div>
+  
+        
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-1 my-1 border-top">
+        <p>© 2023 Vital Modas.</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

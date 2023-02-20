@@ -1,13 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body{
+  font-family: Consolas, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
   background-color: rgb(238, 133, 14);
-  min-height: 100vh;
-  width: 100%;
 }
 
 #principal{
@@ -15,46 +9,47 @@ body{
   margin-right: 5%;
 }
 
-@media (max-width: 767px) {
-  .carousel-inner .carousel-item > div {
-      display: none;
-  }
-  .carousel-inner .carousel-item > div:first-child {
-      display: block;
-  }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
+.carousel-item {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* medium and up screens */
+.card {
+  margin: 10px;
+}
+
+@media (min-width: 576px) {
+  .linha-itens{
+    position: relative; 
+    left: 7vw;
+  }
+  .carousel-item {
+    flex-wrap: nowrap;
+  }
+}
+
 @media (min-width: 768px) {
-  
-  .carousel-inner .carousel-item-end.active,
-  .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
+  .carousel-item {
+    flex-wrap: nowrap;
+    justify-content: center;
   }
-  
-  .carousel-inner .carousel-item-start.active, 
-  .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
+  .linha-itens{
+    position: relative; 
+    left: 12vw;
   }
 }
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-transform: translateX(0);
+@media (min-width: 992px) {
+  .carousel-item {
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
 }
 
   /*Pagina Sobre*/
 
   #texto-sobre{
-    position: absolute;
-    top: 20%;
-    left: 17%;
     text-align: center; 
     font-size: 1rem;
     border-radius: 8px; 
@@ -125,45 +120,11 @@ transform: translateX(0);
     border-width: 0.12rem;
   }
 
-
-  /*Rodapé*/
-  .border-color{
-    border-color: rgb(238, 133, 14)!important;
-    border-width: 0.6rem !important;
-  }
-
-  footer{
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    margin-bottom: -70vh;
-    width: 100vw;
-  }
-  .footer-content ul{
-    list-style: none;
-    color: white;
-  }
-
-  .footer-content li{
-    font-size: 1vw;
-  }
-
-  .barra-horizontal{
-    font-size: 1vw;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    margin-bottom: -1vw;
-    width: 100vw;
-  }
-
-  .barra-horizontal p{
-    margin: 0 ;
-  }
-  
-
+footer h5{
+  border-left-style: solid;
+  border-width: 0.5rem;
+  border-color: rgb(238, 133, 14);
+}
   /*Carousel*/
   .carousel img{
     border-radius: 8px;
@@ -174,6 +135,9 @@ transform: translateX(0);
     max-height: 10vw;
   }
 
+  #carousel-de-produtos02 img{
+    max-height: 10vw;
+  }
 
   .carousel-item{
     max-height: 50vw;
