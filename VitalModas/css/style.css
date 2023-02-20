@@ -49,6 +49,19 @@ body{
 transform: translateX(0);
 }
 
+  /*Pagina Sobre*/
+
+  #texto-sobre{
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    text-align: center; 
+    font-size: 1rem;
+    border-radius: 8px; 
+    color: black;
+    background-color: #fff;
+  }
+
 
   /*Barra de navegação*/  
   #navbar{
@@ -133,11 +146,11 @@ transform: translateX(0);
   }
 
   .footer-content li{
-    font-size: medium;
+    font-size: 1vw;
   }
 
   .barra-horizontal{
-    font-size: medium;
+    font-size: 1vw;
     left: 0;
     right: 0;
     bottom: 0;
