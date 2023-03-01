@@ -47,6 +47,12 @@ body{
   }
 }
 
+
+  #horizontal-bar a{
+    color: white;
+    text-decoration: none;
+  }
+
   /*Pagina Sobre*/
 
   #texto-sobre{
