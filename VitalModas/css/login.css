@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: rgb(238, 133, 14);
+}
+
+.submit-button {
+    background-color:rgb(224, 126, 13)!important;
+    border-color: rgb(2234 126, 13)!important;
+}
+
+.submit-button:hover{
+    background-color:rgb(215, 127, 28)!important;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  border-radius: 5px!important;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;}
