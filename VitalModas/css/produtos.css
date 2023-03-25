@@ -1,0 +1,13 @@
+.col img{
+    width: 20vw;
+    height: 15vw;
+    border-radius: 100%;
+
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

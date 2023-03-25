@@ -18,6 +18,14 @@ body{
 .card {
   margin: 10px;
 }
+.card-body{
+  z-index: 5;
+}
+
+.card-body:hover{
+  z-index: 6;
+  transform: scale(1.5);
+}
 
 @media (min-width: 576px) {
   .linha-itens{
@@ -45,6 +53,7 @@ body{
     flex-wrap: nowrap;
     justify-content: start;
   }
+  
 }
 
 
@@ -153,6 +162,7 @@ footer h5{
     margin-top: 1vw;
     margin-bottom: 1vw;
     border-radius: 10px;
+
   }
   .card{
     background-color: black;
