@@ -24,6 +24,9 @@ header h1{
     height: 340px;
     box-shadow: 5px 5px 5px #0006;
     flex-grow: 1;
+    text-align: center; 
+    text-decoration: none; 
+    color: white;
 }
 .gallery-items img {
     width: 100%;
@@ -36,3 +39,11 @@ header h1{
     transform: scale(1.3);
     filter: none;
 }
+.card{
+    width: 340px;
+    height: 340px;
+}
+.card-body:hover{
+    background-color: black;
+    color: #fff;
+  }
