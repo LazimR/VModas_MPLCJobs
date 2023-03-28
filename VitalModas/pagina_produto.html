@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/pagina_produto.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
@@ -42,8 +43,52 @@
     </div>
   </header>
   <br>
-  <div id="principal" class="container my-3">
+  <div id="principal" class="container my-3 bg-black">
+    <div id="carouselproduto" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="imgProduto" class="d-block w-100" alt="...">
+          <script>
+            var imagem = document.getElementById("imgProduto");
+            imagem.src = "imagens/" + getNome();
+          </script>
+        </div>
+        <!--<div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>-->
+      </div>
+      <!-- 
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselproduto" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselproduto" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      -->
+    </div>
+    <div class="btn-group my-3" role="group">
+      <input type="radio" class="btn-check" name="btntamanho" id="btntamanho1" autocomplete="off">
+      <label class="btn btn-outline-light" for="btntamanho1">P</label>
 
+      <input type="radio" class="btn-check" name="btntamanho" id="btntamanho2" autocomplete="off">
+      <label class="btn btn-outline-light" for="btntamanho2">M</label>
+      
+      <input type="radio" class="btn-check" name="btntamanho" id="btntamanho3" autocomplete="off">
+      <label class="btn btn-outline-light" for="btntamanho3">G</label>
+    </div>
+    <div class="row" id="container_compra">
+      <div class="col"><p id = "precoProduto" class="text-white"></p></div>
+      <script>
+        var txt = document.getElementById("precoProduto");
+        txt.textContent = "R$" + getPreco(); 
+      </script>
+      <div class="col"><button type="submit" class="btn btn-warning">COMPRAR</button></div>
+    </div>
   </div>
   <br>
   <div class="container-fluid bg-black text-white">
