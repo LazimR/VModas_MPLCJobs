@@ -41,7 +41,7 @@ header h1{
     filter: none;
 }
 .gallery-items img:hover{
-    max-height: max-content;
+    max-height: 25vw;
     height: 100%;
 }
 .card{
