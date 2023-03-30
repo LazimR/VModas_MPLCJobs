@@ -12,3 +12,6 @@
     align-items: center;
 }
 
+.col img:hover{
+    filter: contrast(90%);
+}
