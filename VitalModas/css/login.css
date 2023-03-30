@@ -7,9 +7,9 @@ body {
   background-color: rgb(238, 133, 14);
 }
 
-.submit-button {
+.submit-button{
     background-color:rgb(224, 126, 13)!important;
-    border-color: rgb(2234 126, 13)!important;
+    border-color: rgb(224, 126, 13)!important;
 }
 
 .submit-button:hover{

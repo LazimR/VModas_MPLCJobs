@@ -103,7 +103,7 @@ body{
   }
   
   .navbar-nav .nav-link{
-    --bs-nav-link-color: --bs-white;
+    --bs-nav-link-color:white;
   }
   
   .nav-link:hover{
